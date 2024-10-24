@@ -10,12 +10,12 @@ export default function QueryProcessor(query: string): string {
   if (query.toLowerCase().includes("andrew id")) {
     //TODO add your Andrew ID below
     //TODO update the corresponding test case in _tests_
-    return ( "mthani2" );
+    return "mthani2";
   }
 
-  if (query.toLowerCase().includes("What is your name?")) {
-    return ("mthani2-313");
+  if (query.toLowerCase().includes("what is your name")) {
+    return "mthani2-313";
   }
+
   return "";
-  
 }
