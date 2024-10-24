@@ -33,5 +33,5 @@ describe("QueryProcessor", () => {
         expect(response).toBe((
             "mthani2-313"
           ));
-    }
+    });
 });
