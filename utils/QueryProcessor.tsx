@@ -17,11 +17,11 @@ export default function QueryProcessor(query: string): string {
     return "mthani2-313";
   }
 
-  if (query.includes("which of the following numbers is the largest")) {
-    // Extract numbers from the query
-    const numbers = query.match(/\d+/g).map(Number);
-    // Find and return the largest number
-    return Math.max(...numbers).toString();
+  if (query.includes("What is") && query.toLowerCase().includes("plus")) {
+    const numbers = query.match(/\d+/g)?.map(Number);
+    if (numbers && numbers.length === 2) {
+      return (numbers[0] + numbers[1]).toString();
+    }
   }
 
   return "";
